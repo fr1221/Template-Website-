@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, sans-serif;
+    background-color:#f4f4f4;
+}
+header {
+    background: url(maxresdefault.jpg) center/cover 
+    no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+
+}
+header:before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+nav {
+    background-color: deepskyblue;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+.menu li {
+    margin: 0 1rem;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+}
+.menu li a:hover {
+    color:#ffcc00;
+}
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+}
+.destinasi {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+.destinasi h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: #333
+}
+.destinasi-item {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    margin: 0.5rem;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+.destinasi-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    border-color: #ffcc00;
+}
+.destinasi-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destinasi-item p {
+    margin-top: 1rem; 
+    font-size: 14px; 
+    color: #666; 
+    line-height: 1.5; 
+}
+
+
+.destinasi-item button {
+    margin-top: 1rem; 
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.destinasi-item button:hover {
+    background-color: #0056b3;
+}
